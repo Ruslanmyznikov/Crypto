@@ -2,42 +2,120 @@
 @import "fonts"
 @import "libs"
 
-::placeholder
-	color: #666
-
-::selection
-	background-color: $accent
-	color: #fff
-
-body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
-
 .text-center
-	text-align: center
+  text-align: center
 
 b, strong
-	font-weight: bold
+  font-weight: bold
+
+body
+  overflow-x: hidden
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.hero
+  width: 1920px
+  height: 1080px
+  background-color: #141830
+  padding-top: 58px
+
+  nav
+    width: 1440px
+    margin: 0 auto
+    height: 120px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    img
+      margin-top: 4px
+      margin-left: 225px
+
+    .burger-container
+      width: 48px
+      height: 35px
+      cursor: pointer
+
+    .burger
+      position: relative
+      width: 100%
+      height: 100%
+
+    .burger::after , .burger::before
+      content: ""
+      position: absolute
+      width: 100%
+
+    .burger::after
+      bottom: 7px
+
+    .burger::before
+      bottom: 18px
+
+    .burger1
+      color: white
+      border-bottom: 5px solid currentcolor
+      transition: border-bottom 1s
+
+    .burger1::after
+      border-bottom: 5px solid currentcolor
+      transition: transform 1s
+
+    .burger1::before
+      border-bottom: 5px solid currentcolor
+      transition: transform 1s
+
+    .burger1-open
+      border-bottom: 4px solid transparent
+
+    .burger1-open::after
+      transform: rotate(45deg) translate(-7px, -9px)
+
+    .burger1-open::before
+      transform: rotate(-45deg)
+
+    @keyframes MiddleOpen
+      50%
+        bottom: 0
+        transform: none
+
+      100%
+        transform: rotate(45deg)
+
+
+  &__phone
+    color: white
+    span
+      font-family: 'Proxima Nova Rg'
+      font-weight: bold
+      font-style: normal
+      font-size: 36px
+
+  &__sale
+    font-family: 'Proxima Nova Bl'
+    font-weight: 900
+    font-style: normal
+    font-size: 360px
+    line-height: 500px
+    color: white
+    text-align: center
+    padding-right: 461px
+
+
+.gradient-text
+  background: linear-gradient(45deg, #81DB00 0%, #00A3FB)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  color: #0B2349
+  display: table
+  margin: 20px auto
 
 
 
-@import "media" // Always at the end
+
+
+@import "media"
+// Always at the end
