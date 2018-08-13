@@ -16,11 +16,20 @@ body
   margin: 0
   box-sizing: border-box
 
+.gradient-text
+  background: linear-gradient(45deg, #81DB00 0%, #00A3FB)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  color: #0B2349
+  display: table
+  margin: 20px auto
+
 .hero
   width: 1920px
   height: 1080px
   background-color: #141830
   padding-top: 58px
+  position: relative
 
   nav
     width: 1440px
@@ -104,15 +113,43 @@ body
     text-align: center
     padding-right: 461px
 
+  h1
+    color: white
+    font-family: 'Proxima Nova Lt'
+    font-weight: 300
+    font-style: normal
+    font-size: 54px
+    padding-left: 360px
+    margin-top: -106px
+    line-height: 63px
 
-.gradient-text
-  background: linear-gradient(45deg, #81DB00 0%, #00A3FB)
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
-  color: #0B2349
-  display: table
-  margin: 20px auto
 
+
+  &__bird
+    position: absolute
+    top: 300px
+    right: 240px
+
+  button
+    width: 360px
+    height: 120px
+    border: solid 3px white
+    background-color: transparent
+    font-family: 'Proxima Nova Rg'
+    font-weight: bold
+    font-style: normal
+    border-radius: 60px
+    color: white
+    font-size: 27px
+    text-transform: uppercase
+    margin-left: 360px
+    margin-top: 32px
+
+    &:hover
+      background-color: #00A3FB
+      border: solid 3px #00A3FB
+      cursor: pointer
+      transition: 0.5s
 
 
 
