@@ -95,12 +95,12 @@
 }
 
 @font-face {
-    font-family: 'Roboto Lt';
-    src: url('../fonts/RobotoRegular/RobotoLight.eot');
-    src: url('../fonts/RobotoRegular/RobotoLight.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/RobotoRegular/RobotoLight.woff2') format('woff2'),
-    url('../fonts/RobotoRegular/RobotoLight.woff') format('woff'),
-    url('../fonts/RobotoRegular/RobotoLight.ttf') format('truetype');
+    font-family: 'RobotoLight';
+    src: url('../fonts/RobotoRegular/Roboto-Light.eot');
+    src: url('../fonts/RobotoRegular/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoRegular/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/RobotoRegular/Roboto-Light.woff') format('woff'),
+    url('../fonts/RobotoRegular/Roboto-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
