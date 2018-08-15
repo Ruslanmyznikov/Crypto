@@ -11,6 +11,7 @@ b, strong
 body
   overflow-x: hidden
 
+
 *
   padding: 0
   margin: 0
@@ -726,7 +727,7 @@ body
 .our-team
   width: 1920px
   margin: 0 auto
-  height: 1080px
+  height: 1020px
   padding-top: 111px
 
   h2
@@ -736,10 +737,12 @@ body
     font-size: 36px
     color: #0a112d
     text-transform: uppercase
+
   &__container
     width: 1460px
     padding-left: 11px
     margin: 0 auto
+
     &__photo-wrapper
       margin-top: 56px
 
@@ -790,8 +793,10 @@ body
     .text-active
       background-color: #0A112D
       box-shadow: 0px 36px 96px 0px rgba(92, 98, 134, 0.64)
+
       h3,h4
         color: white
+
       p
         display: block
 
@@ -810,3 +815,83 @@ body
 
       h3, h4
         margin-left: 45px
+
+
+.footer
+  width: 1920px
+  height: 720px
+  display: flex
+  align-items: center
+  flex-direction: column
+
+  &__container
+    width: 1440px
+    height: 600px
+    padding-top: 166px
+    position: relative
+
+    h2
+      font-family: 'Proxima Nova Lt'
+      font-weight: 300
+      font-style: normal
+      font-size: 54px
+      color: #141830
+
+    &__telegram
+      display: flex
+      font-family: 'RobotoLight'
+      margin-top: 28px
+
+      img
+        padding-right: 28px
+
+
+      h3
+        font-size: 36px
+        color: #141830
+        font-weight: normal
+
+        a
+          font-family: 'RobotoBold'
+          font-weight: bold
+          color: #00a2f8
+
+    p
+      font-family: 'RobotoLight'
+      font-size: 27px
+      margin-top: 47px
+
+    &__payment
+      display: flex
+      align-items: center
+      margin-top: 33px
+
+      img
+        &:nth-child(n+2)
+          margin-left: 28px
+
+        &:last-child
+          margin-left: 30px
+
+
+    &__bird
+      position: absolute
+      right: 0
+      top: 0
+
+  &__copyright
+    min-width: 1920px
+    height: 120px
+    background-color: #141830
+
+    p
+      text-align: center
+      font-family: 'robotoRegular'
+      font-size: 24px
+      line-height: 31.5px
+      color: #5c6286
+      margin-top: 24px
+
+
+
+
