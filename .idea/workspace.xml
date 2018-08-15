@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d931b1fd-b520-4fdd-b786-5d6c70a02863" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_media.sass" afterDir="false" />
@@ -53,7 +52,7 @@
           <entry key="css" value="58" />
           <entry key="html" value="2759" />
           <entry key="js" value="202" />
-          <entry key="sass" value="7101" />
+          <entry key="sass" value="7359" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,7 +60,7 @@
           <entry key="CSS" value="58" />
           <entry key="HTML" value="2759" />
           <entry key="JavaScript" value="202" />
-          <entry key="Sass" value="7101" />
+          <entry key="Sass" value="7359" />
         </counts>
       </usages-collector>
     </session>
@@ -71,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+            <state relative-caret-position="386">
+              <caret line="178" column="10" lean-forward="true" selection-start-line="148" selection-end-line="178" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -80,8 +79,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="150" column="17" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
+            <state relative-caret-position="345">
+              <caret line="260" column="23" selection-start-line="260" selection-start-column="23" selection-end-line="260" selection-end-column="23" />
+              <folding>
+                <element signature="e#2061#2218#0" />
+                <element signature="e#2705#2869#0" />
+                <element signature="e#2339#2647#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="146" column="9" lean-forward="true" selection-start-line="146" selection-start-column="2" selection-end-line="146" selection-end-column="9" />
+              <caret line="225" column="32" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="32" />
               <folding>
                 <element signature="e#8607#9900#0" />
                 <element signature="e#9909#14946#0" />
@@ -119,8 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hos</find>
-      <find>'</find>
       <find>'P</find>
       <find>color</find>
       <find>robo</find>
@@ -147,6 +149,9 @@
       <find>1920</find>
       <find>sale</find>
       <find>grad</find>
+      <find>height</find>
+      <find>heig</find>
+      <find>970</find>
       <find>sa</find>
     </findStrings>
   </component>
@@ -270,7 +275,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76617000" />
+    <option name="totallyTimeSpent" value="77893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -379,7 +384,7 @@
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="146" column="9" lean-forward="true" selection-start-line="146" selection-start-column="2" selection-end-line="146" selection-end-column="9" />
+          <caret line="225" column="32" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="32" />
           <folding>
             <element signature="e#8607#9900#0" />
             <element signature="e#9909#14946#0" />
@@ -391,15 +396,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="386">
+          <caret line="178" column="10" lean-forward="true" selection-start-line="148" selection-end-line="178" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="150" column="17" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
+        <state relative-caret-position="345">
+          <caret line="260" column="23" selection-start-line="260" selection-start-column="23" selection-end-line="260" selection-end-column="23" />
+          <folding>
+            <element signature="e#2061#2218#0" />
+            <element signature="e#2705#2869#0" />
+            <element signature="e#2339#2647#0" />
+          </folding>
         </state>
       </provider>
     </entry>
