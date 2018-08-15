@@ -21,6 +21,7 @@ section, footer
   min-width: 1920px
   margin: auto
 
+
 .gradient-text
   background: linear-gradient(90deg, #81DB00 0%, #00A3FB)
   -webkit-background-clip: text
@@ -28,6 +29,40 @@ section, footer
   display: table
   color: #0B2349
   margin: 20px auto
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+  .gradient-text
+    background: transparent
+    color: #81DB00
+
+  .tariffs__wrapper__pricing__card__gradient
+    background: transparent!important
+    color: #0a112d
+
+  .tariffs__wrapper__pricing__card
+    &__gradient
+      &:hover
+        color: #81DB00
+
+  .about-us__left-side__flow3
+    h3
+      background: transparent!important
+      color: #81DB00
+
+  input[type=range]::-ms-track
+    visibility: hidden!important
+
+  .track-container
+    width: 0
+    height: 0
+
+
+
+
+
+
+
 
 .hero
   min-width: 1920px
