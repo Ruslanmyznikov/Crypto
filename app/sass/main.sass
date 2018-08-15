@@ -8,10 +8,6 @@
 b, strong
   font-weight: bold
 
-body
-  overflow-x: hidden
-
-
 *
   padding: 0
   margin: 0
@@ -21,13 +17,20 @@ section, footer
   min-width: 1920px
   margin: auto
 
+@-ms-viewport
+  width: 1920px
+  zoom: 1
+
+@media (min-width: 1919px)
+  body
+    overflow-x: hidden
 
 .gradient-text
-  background: linear-gradient(90deg, #81DB00 0%, #00A3FB)
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
+  //background: linear-gradient(90deg, #81DB00 0%, #00A3FB)
+  //-webkit-background-clip: text
+  //-webkit-text-fill-color: transparent
 
-  color: #0B2349
+  color: #81DB00
   margin: 20px auto
 
 
@@ -56,13 +59,6 @@ section, footer
   .track-container
     width: 0
     height: 0
-
-
-
-
-
-
-
 
 .hero
   min-width: 1920px
