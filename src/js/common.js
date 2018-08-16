@@ -43,43 +43,45 @@ $('input[type=range]').on('input', function(e){
 $(document).on({
     mouseenter: function () {
         mouse_is_inside = true;
-        $( ".our-team__text-wrapper__one" ).addClass( "text-active" );
+        $( ".our-team__container__photo-wrapper__one" ).addClass( "text-active" );
         $('.first-image').attr('src','img/1color.png');
     },
 
     mouseleave: function () {
         mouse_is_inside = false;
-        $( ".our-team__text-wrapper__one" ).removeClass( "text-active" );
+        $( ".our-team__container__photo-wrapper__one" ).removeClass( "text-active" );
         $('.first-image').attr('src','img/1bw.png');
+        console.log('das');
+
     }
-}, '.our-team__text-wrapper__one, .first-image');
+}, '.our-team__container__photo-wrapper__one');
 
 $(document).on({
     mouseenter: function () {
         mouse_is_inside = true;
-        $( ".our-team__text-wrapper__two" ).addClass( "text-active" );
+        $( ".our-team__container__photo-wrapper__two" ).addClass( "text-active" );
         $('.second-photo').attr('src','img/2color.png');
     },
 
     mouseleave: function () {
         mouse_is_inside = false;
-        $( ".our-team__text-wrapper__two" ).removeClass( "text-active" );
+        $( ".our-team__container__photo-wrapper__two" ).removeClass( "text-active" );
         $('.second-photo').attr('src','img/2bw.png');
     }
-}, '.our-team__text-wrapper__two, .second-photo');
+}, '.our-team__container__photo-wrapper__two');
 
 $(document).on({
     mouseenter: function () {
         mouse_is_inside = true;
-        $( ".our-team__text-wrapper__three" ).addClass( "text-active" );
+        $( ".our-team__container__photo-wrapper__three" ).addClass( "text-active" );
         $('.third-photo').attr('src','img/3color.png');
     },
 
     mouseleave: function () {
         mouse_is_inside = false;
-        $( ".our-team__text-wrapper__three" ).removeClass( "text-active" );
+        $( ".our-team__container__photo-wrapper__three" ).removeClass( "text-active" );
         $('.third-photo').attr('src','img/3bw.png');
     }
-}, '.our-team__text-wrapper__three, .third-photo');
+}, '.our-team__container__photo-wrapper__three');
 
 AOS.init( {disable: 'mobile'} );

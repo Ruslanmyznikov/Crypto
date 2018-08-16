@@ -7,34 +7,31 @@
 +media-breakpoint-down(lg)
 
   section
-    width: 100vw
+    width: 100%
 
   .hero
 
-    width: 100vw
+    width: 100%
     nav
       width: 90%
 
     &__wrapper
-      max-width: 970px
-
     &__sale
-      padding-left: 220px
+      padding-left: 140px
 
     &__bird
       display: none
 
   .tariffs
-    max-height: 970px
 
   .tariffs__wrapper
-    max-width: 970px
+    max-width: 90%
     h2
       text-align: center
 
   .about-us
     .about-container
-      max-width: 970px
+      max-width: 90%
       margin-right: 0
     &__left-side
       &__flow1, &__flow2 ,&__flow3
@@ -56,16 +53,19 @@
 
   .directions
     &__container
-      max-width: 970px
+      max-width: 90%
       background-position: 20px 74px
       background-size: contain
 
       &__advantages
+        height: 750px
+        width: 100%
         margin-top: 0
         margin-left: 0
 
         &__wrapper
           width: 410px
+          height: 350px
 
   .income
     &__container
@@ -87,48 +87,54 @@
     height: 900px
 
     &__gradient-line
-      width: 100vw
+      width: 100%
+      bottom: 479px
 
     &__container
       max-width: 970px
       img
         height: 230px
 
-    &__text-wrapper
-      max-width: 970px
-      margin: auto
+      &__photo-wrapper
+        max-width: 90%
+        margin: auto
+        height: 540px
 
-      h3
-        font-size: 27px
-        text-align: center
-        margin-left: 0
-        padding: 0
-        margin-top: 15px
+        h3
+          font-size: 27px
+          text-align: center
+          margin-left: 0
+          padding: 0
+          margin-top: 15px
 
-      h4
-        font-size: 22px
-        text-align: center
-        padding: 0
-        margin-left: 0
+        h4
+          font-size: 22px
+          text-align: center
+          padding: 0
+          margin-left: 0
 
-      p
-        font-size: 17px
-        text-align: justify
+        p
+          font-size: 17px
+          text-align: justify
 
-      &__one
-        width: 420px
+        &__one
+          width: 387px
 
-      &__two
-        width: 500px
+        &__two
+          width: 387px
 
-      &__three
-        width: 420px
+        &__three
+          width: 387px
+
+
+
 
   .footer
-    width: 100vw
+    width: 100%
 
     &__container
       max-width: 970px
+      padding-top: 0
 
       &__bird
         display: none
@@ -142,11 +148,13 @@
 
  //≥576px
 +media-breakpoint-down(xs)
+  body
+
   section
-   width: 100vw
+   width: 100%
 
   .hero
-    width: 100vw
+    width: 100%
     padding-top: 0
     height: 100vh
 
@@ -156,6 +164,7 @@
 
     nav
       width: 90%
+      height: 60px
 
       img
         margin: 0
@@ -175,7 +184,7 @@
         text-align: center
 
       button
-        width: 180px
+        width: 260px
         height: 90px
         margin: 30px auto
 
@@ -184,7 +193,7 @@
       font-size: 120px
       padding: 0
       line-height: 150px
-      margin-top: 120px
+      margin-top: 50px
 
     &__bird
       display: none
@@ -192,8 +201,9 @@
 
   .tariffs
     max-height: 1600px
+
   .tariffs__wrapper
-    max-width: 100vw
+    max-width: 100%
     h2
       text-align: center
 
@@ -204,7 +214,9 @@
         width: 320px
 
         button
-          margin-top: 40px
+          margin-top: 60px
+          height: 90px
+          width: 270px
 
       .card1
         margin-right: 0
@@ -215,8 +227,9 @@
 
 
   .about-us
+    max-width: 100%
     .about-container
-      max-width: 100vw
+      width: 95%
       margin-right: 0
       flex-wrap: wrap
 
@@ -237,7 +250,7 @@
         margin-top: 10px
 
       h3
-        font-size: 76px
+        font-size: 70px
 
       p
         font-size: 24px
@@ -251,80 +264,253 @@
           font-size: 17px
 
   .directions
+    height: 1850px
+    margin: 80px auto 0
+    padding-top: 50px
     &__container
-      max-width: 100vw
+      max-width: 100%
       background-image: none
+      height: 1800px
+
+      h2
+        text-align: center
+
 
       &__advantages
         margin-top: 0
         margin-left: 0
         flex-wrap: wrap
+        height: 1720px
+        width: 100%
+        align-items: center
+        justify-content: center
+
 
         &__wrapper
-          width: 410px
+          width: 95%
+          margin: 0
+          padding: 0
+          display: flex
+          flex-direction: column
+          align-items: center
+
+          h3
+            font-size: 30px
+
+          p
+            font-size: 18px
+            text-align: center
+
+
+          &:first-child
+            margin-bottom: 0
+
+          &:nth-child(2n)
+            margin-right: 0
+            padding-left: 0
+
+          &:nth-child(n)
+            margin-left: 0
 
   .income
+    width: 100%
+    background-position: center bottom
+    background-size: contain
+    height: 1270px
+
     &__container
-      max-width: 970px
+      height: 100%
+      max-width: 100%
+      padding-top: 50px
       margin-right: 0
+      padding-left: 15px
+      padding-right: 15px
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      button
+        width: 95%
+        height: 90px
+        margin-top: 20px
+
+      .counter
+        p:nth-child(2)
+          margin-left: 75px
+
+      h2
+        text-align: center
 
       &__wrapper
+        flex-wrap: wrap
+
+        &__left-side
+          width: 100%
+
+          &__button-wrapper
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+
+            .light-btn
+              width: 80%
+
+            .premium-btn
+              width: 90%
+              margin: 0
+
+
+          input[type=range]
+            width: 95%
+            margin-top: 0
+
+          h3
+            font-size: 22px
+
         &__right-side
-          margin-left: 90px
+          width: 100%
+          margin-left: 0
+          margin-top: 20px
+
+          &__sum
+            width: 190px
+            padding-left: 60px
+            padding-right: 40px
+
+          .sum-wrp
+            p
+              margin-top: 35px
+
+          h3
+            font-size: 22px
           &__amount
-            font-size: 100px
+            font-size: 75px
+            line-height: 100px
 
   .our-farm
+    height: 100vh
     &__container
-      max-width: 970px
+      max-width: 100vw
+      max-height: 100vh
+      padding-top: 50px
+      padding-left: 10px
 
+      &__center
+        margin-top: 100px
 
-  .our-team
-    height: 900px
-
-    &__gradient-line
-      min-width: 1200px
-      width: 100%
-    &__container
-      max-width: 970px
-      img
-        height: 230px
-
-    &__text-wrapper
-      max-width: 970px
-      margin: auto
-
-      h3
-        font-size: 27px
-        text-align: center
-        margin-left: 0
-        padding: 0
-        margin-top: 15px
-
-      h4
-        font-size: 22px
-        text-align: center
-        padding: 0
-        margin-left: 0
 
       p
-        font-size: 17px
-        text-align: justify
+        font-size: 22px
 
-      &__one
-        width: 420px
+  .our-team
+    height: 1850px
+    width: 100%
+    padding-top: 40px
 
-      &__two
-        width: 500px
-
-      &__three
-        width: 420px
-
-  .footer
-    min-width: 1200px
+    &__gradient-line
+      display: none
 
     &__container
-      max-width: 970px
+      max-width: 95%
+      padding: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      h2
+
+      &__photo-wrapper
+        width: 100%
+        margin: auto
+        flex-wrap: wrap
+        justify-content: center
+
+        h3
+          font-size: 27px
+          text-align: center
+          margin-left: 0
+          padding: 0
+          margin-top: 15px
+
+        h4
+          font-size: 22px
+          text-align: center
+          padding: 0
+          margin-left: 0
+          margin-top: 0
+
+        p
+          font-size: 17px
+          text-align: justify
+          margin-top: 20px
+
+        &__one
+          width: 312px
+          height: 550px
+
+
+        &__two
+          width: 312px
+          height: 550px
+
+        &__three
+          width: 312px
+          height: 550px
+
+
+      img
+        height: 250px
+
+
+
+
+  .footer
+    width: 100%
+    height: 550px
+
+    h2
+      font-size: 32px
+      text-align: center
+
+    h3
+      font-size: 24px
+      text-align: center
+
+    p
+      font-size: 20px
+      text-align: center
+      margin-top: 18px
+
+    &__container
+      width: 100%
+      height: 500px
+      padding-top: 70px
+
+      &__telegram
+        display: flex
+        justify-content: center
+        align-items: center
+
+      &__payment
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        height: 220px
+        img
+          &:first-child
+            height: 65px
+
+          &:nth-child(2)
+            height: 30px
+            margin-left: 5px
+
+          &:last-child
+            height: 30px
+            margin-left: 5px
+
+    &__copyright
+      margin-top: 25px
+
 
       &__bird
         display: none
