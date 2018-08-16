@@ -362,7 +362,7 @@
 
 
           input[type=range]
-            width: 300px
+            width: 95%
             margin-top: 0
 
           h3
@@ -626,6 +626,21 @@
 
       img
         height: 250px
+  .tariffs__wrapper__pricing
+    flex-wrap: wrap
+    .card1
+      margin-right: 0
+    .card2
+      margin-top: 20px
+      margin-left: 0
+  .about-container
+    flex-wrap: wrap
+  .footer__container__payment
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+
 // ≤768px
 +media-breakpoint-up(md)
   .hero
@@ -659,7 +674,8 @@
         justify-content: center
   .our-team
     height: 1350px
-
+  .about-container
+    flex-wrap: nowrap
 
 
 
@@ -683,7 +699,7 @@
   .directions
     &__container
       background: url("../img/digitsBg.png") no-repeat 176px 106px
-      width: 100%
+      width: 75%
       &__advantages
         &__wrapper
           width: 410px
@@ -734,9 +750,18 @@
 
       img
         height: 250px
+  .tariffs__wrapper__pricing
+    .card1
+      margin-right: 15px
+      margin-top: 20px
+    .card2
+      margin-left: 15px
 
 // ≤1200px
 +media-breakpoint-up(xl)
+  .hero
+    &__wrapper
+      padding-left: 360px
   .our-team
     height: 1000px
     &__container
