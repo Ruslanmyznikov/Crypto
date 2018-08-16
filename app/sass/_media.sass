@@ -209,7 +209,11 @@
       flex-wrap: wrap
 
       &__card
-        width: 320px
+        width: 300px
+        &__list-wrp
+          width: 100%
+          p
+            font-size: 24px
 
         button
           margin-top: 60px
@@ -358,7 +362,7 @@
 
 
           input[type=range]
-            width: 95%
+            width: 300px
             margin-top: 0
 
           h3
@@ -514,6 +518,8 @@
 // ≤576px
 +media-breakpoint-up(sm)
   .hero
+    &__wrapper
+      width: 100%
     &__phone
       span
         font-size: 24px
@@ -656,9 +662,14 @@
 
 
 
+
 // ≤992px
 +media-breakpoint-up(lg)
   .hero
+
+    &__phone
+      span
+        font-size: 36px
     nav
       img
         display: block
@@ -671,8 +682,8 @@
 
   .directions
     &__container
-      background-image: none
-      width: 95%
+      background: url("../img/digitsBg.png") no-repeat 176px 106px
+      width: 100%
       &__advantages
         &__wrapper
           width: 410px
@@ -691,5 +702,68 @@
   .our-farm
     p
       font-size: 54px
+
+  .our-team
+    height: 1000px
+    &__container
+
+      &__photo-wrapper
+        margin-top: 70px
+        flex-wrap: nowrap
+
+        h3
+          font-size: 27px
+        h4
+          font-size: 21px
+        p
+          font-size: 17px
+
+
+        &__one
+          width: 300px
+          height: 600px
+
+        &__two
+          width: 300px
+          height: 600px
+
+        &__three
+          width: 300px
+          height: 600px
+          margin-top: 0
+
+      img
+        height: 250px
+
 // ≤1200px
 +media-breakpoint-up(xl)
+  .our-team
+    height: 1000px
+    &__container
+
+      &__photo-wrapper
+        margin-top: 70px
+
+        h3
+          font-size: 36px
+        h4
+          font-size: 27px
+        p
+          font-size: 24px
+
+
+        &__one
+          width: 450px
+          height: 730px
+
+        &__two
+          width: 450px
+          height: 730px
+
+        &__three
+          width: 450px
+          height: auto
+          margin-top: 0
+
+      img
+        height: auto

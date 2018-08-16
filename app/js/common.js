@@ -82,4 +82,4 @@ $(document).on({
     }
 }, '.our-team__container__photo-wrapper__three, .third-photo');
 
-AOS.init( {disable: 'mobile'} );
+// AOS.init( {disable: 'mobile'} );
