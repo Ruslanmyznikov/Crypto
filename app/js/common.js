@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
     var burgers = document.querySelectorAll(".burger-container");
     for (var i = 0; i < burgers.length; i++) {
         toggle.apply(burgers[i]);
@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     var control = document.getElementById("chk-control"), child;
     control.indeterminate = true;
-    control.addEventListener('click', function() {
+    control.addEventListener('click', function () {
         if (this.checked) {
             for (let i = 0; i < burgers.length; i++) {
                 child = burgers[i].children[0];
@@ -24,12 +24,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function toggle() {
     var menu = this.children[0];
-    this.addEventListener('click', function() {
+    this.addEventListener('click', function () {
         menu.classList.toggle(menu.id + "-open");
     });
 }
 
-$('input[type=range]').on('input', function(e){
+$('input[type=range]').on('input', function (e) {
     var min = e.target.min,
         max = e.target.max,
         val = e.target.value;
@@ -43,43 +43,73 @@ $('input[type=range]').on('input', function(e){
 $(document).on({
     mouseenter: function () {
         mouse_is_inside = true;
-        $( ".our-team__container__photo-wrapper__one" ).addClass( "text-active" );
-        $('.first-image').attr('src','img/1color.png');
+        $(".text-wrapper1").addClass("text-active");
+        $('.first-image').attr('src', 'img/1color.png');
     },
 
     mouseleave: function () {
         mouse_is_inside = false;
-        $( ".our-team__container__photo-wrapper__one" ).removeClass( "text-active" );
-        $('.first-image').attr('src','img/1bw.png');
+        $(".text-wrapper1").removeClass("text-active");
+        $('.first-image').attr('src', 'img/1bw.png');
     }
 }, '.our-team__container__photo-wrapper__one, .first-image');
 
 $(document).on({
     mouseenter: function () {
         mouse_is_inside = true;
-        $( ".our-team__container__photo-wrapper__two" ).addClass( "text-active" );
-        $('.second-photo').attr('src','img/2color.png');
+        $(".text-wrapper2").addClass("text-active");
+        $('.second-photo').attr('src', 'img/2color.png');
     },
 
     mouseleave: function () {
         mouse_is_inside = false;
-        $( ".our-team__container__photo-wrapper__two" ).removeClass( "text-active" );
-        $('.second-photo').attr('src','img/2bw.png');
+        $(".text-wrapper2").removeClass("text-active");
+        $('.second-photo').attr('src', 'img/2bw.png');
     }
 }, '.our-team__container__photo-wrapper__two, .second-photo');
 
 $(document).on({
+
     mouseenter: function () {
         mouse_is_inside = true;
-        $( ".our-team__container__photo-wrapper__three" ).addClass( "text-active" );
-        $('.third-photo').attr('src','img/3color.png');
+        $(".text-wrapper3").addClass("text-active");
+        $('.third-photo').attr('src', 'img/3color.png');
     },
 
     mouseleave: function () {
         mouse_is_inside = false;
-        $( ".our-team__container__photo-wrapper__three" ).removeClass( "text-active" );
-        $('.third-photo').attr('src','img/3bw.png');
+        $(".text-wrapper3").removeClass("text-active");
+        $('.third-photo').attr('src', 'img/3bw.png');
     }
 }, '.our-team__container__photo-wrapper__three, .third-photo');
+
+let isActive = false;
+let isActiveP = false;
+
+$(document).on({
+    click: function () {
+        isActive = !isActive;
+        if (!this.isActive) {
+            $(".light-btn").addClass("active");
+            $(".premium-btn").removeClass("active");
+            isActiveP = false;
+        }
+        else
+            $(".light-btn").removeClass("active");
+    }
+}, '.light-btn');
+
+$(document).on({
+    click: function () {
+        isActiveP = !isActiveP;
+        if (!this.isActiveP) {
+            $(".premium-btn").addClass("active");
+            $(".light-btn").removeClass("active");
+            isActive = false;
+        }
+        else
+            $(".premium-btn").removeClass("active");
+    }
+}, '.premium-btn');
 
 // AOS.init( {disable: 'mobile'} );

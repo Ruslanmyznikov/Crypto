@@ -31,6 +31,10 @@ section, footer
   color: #81DB00
   margin: 20px auto
 
+@media screen and (max-width: 1500px)
+  .footer__container__bird
+    display: none
+
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
   .gradient-text
@@ -137,6 +141,7 @@ section, footer
 
   &__phone
     color: white
+    cursor: pointer
     span
       font-family: 'Proxima Nova Rg'
       font-weight: bold
@@ -606,9 +611,12 @@ section, footer
             margin: 24px 0
             padding-bottom: 4px
             cursor: pointer
-
-
             &:hover
+              background-color: white
+              border-color: #00A3FB
+
+
+            &.active
               background: linear-gradient(90deg, #81DB00 0%, #00A3FB)
               border: none
               transition: 0.5s
@@ -779,11 +787,14 @@ section, footer
     padding-left: 11px
     margin: 0 auto
 
+    .text-wrapper1, .text-wrapper2, .text-wrapper3
+      width: 100%
+      height: 100%
 
     &__photo-wrapper
       margin-top: 56px
       display: flex
-      height: 725px
+      height: 720px
       justify-content: center
 
 
@@ -793,7 +804,8 @@ section, footer
         font-size: 36px
         padding-left: 30px
         color: #0a112d
-        margin-top: 31px
+        margin-top: 46px
+
 
       h4
         font-family: 'RobotoLight'
@@ -801,7 +813,7 @@ section, footer
         font-size: 27px
         padding-left: 30px
         color: #0a112d
-        margin-top: 17px
+        margin-top: 12px
 
       p
         font-family: 'robotoRegular'
@@ -809,7 +821,7 @@ section, footer
         font-size: 24px
         padding-left: 30px
         color: #5c6286
-        margin-top: 43px
+        margin-top: 38px
         line-height: 31.5px
         display: none
 
@@ -869,9 +881,9 @@ section, footer
   flex-direction: column
 
   &__container
-    width: 1440px
+    width: 100%
     height: 600px
-    padding-top: 166px
+    padding: 159px 240px 0
     position: relative
 
     h2
@@ -884,13 +896,16 @@ section, footer
     &__telegram
       display: flex
       font-family: 'RobotoLight'
-      margin-top: 28px
+      margin-top: 15px
 
       img
-        padding-right: 28px
+        width: 48px
+        height: 42px
+
 
 
       h3
+        margin-left: 28px
         font-size: 36px
         color: #141830
         font-weight: normal
@@ -903,7 +918,8 @@ section, footer
     p
       font-family: 'RobotoLight'
       font-size: 27px
-      margin-top: 47px
+      margin-top: 33px
+      margin-bottom: -5px
 
     &__payment
       display: flex
@@ -920,7 +936,7 @@ section, footer
 
     &__bird
       position: absolute
-      right: 0
+      right: 240px
       top: 0
 
   &__copyright

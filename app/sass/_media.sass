@@ -10,7 +10,6 @@
     width: 100%
 
   .hero
-
     width: 100%
     padding-bottom: 70px
     nav
@@ -209,7 +208,7 @@
       flex-wrap: wrap
 
       &__card
-        width: 300px
+        width: 310px
         &__list-wrp
           width: 100%
           p
@@ -404,7 +403,7 @@
         font-size: 22px
 
   .our-team
-    height: 1850px
+    height: 1800px
     width: 100%
     padding-top: 40px
 
@@ -482,7 +481,9 @@
     &__container
       width: 100%
       height: 500px
-      padding-top: 70px
+      padding: 0
+
+
 
       &__telegram
         display: flex
@@ -520,7 +521,11 @@
   +media-breakpoint-down(lg)
     .hero
       &__wrapper
+        text-align: center
         width: 100%
+        padding: 0
+        h1
+          text-align: center
       &__phone
         span
           font-size: 24px
@@ -537,6 +542,8 @@
     .income
       height: 1200px
       &__container
+        h2
+          padding-left: 70px
         &__wrapper
           &__right-side
             &__amount
@@ -627,6 +634,7 @@
 
         img
           height: 250px
+
     .tariffs__wrapper__pricing
       flex-wrap: wrap
       .card1
@@ -640,6 +648,9 @@
       display: flex
       flex-wrap: wrap
       justify-content: center
+
+    .footer__container
+      padding: 0
 
 
 // ≤768px
@@ -674,6 +685,8 @@
         &__wrapper
           flex-wrap: wrap
           justify-content: center
+
+
     .our-team
       height: 1350px
     .about-container
@@ -685,7 +698,6 @@
 +media-breakpoint-up(lg)
   +media-breakpoint-down(lg)
     .hero
-
       &__phone
         span
           font-size: 36px
@@ -701,16 +713,16 @@
 
     .directions
       &__container
-        background: url("../img/digitsBg.png") no-repeat 176px 106px
-        width: 75%
+        background: none
+        width: 90%
         &__advantages
           &__wrapper
-            width: 410px
+            width: 400px
             h3
-              font-size: 36px
+              font-size: 31px
 
             p
-              font-size: 22.5px
+              font-size: 18px
 
     .income
       height: 1200px
@@ -723,12 +735,14 @@
         font-size: 54px
 
     .our-team
-      height: 1000px
+      height: 890px
       &__container
 
         &__photo-wrapper
           margin-top: 70px
           flex-wrap: nowrap
+
+
 
           h3
             font-size: 27px
@@ -755,10 +769,119 @@
           height: 250px
     .tariffs__wrapper__pricing
       .card1
-        margin-right: 15px
-        margin-top: 20px
+        margin: 15px
       .card2
-        margin-left: 15px
+        margin: 15px
+
+    .footer
+      h2
+        text-align: center
+      p
+        text-align: center
+      &__container
+        &__telegram
+          justify-content: center
+          img
+            padding-right: 0
+
+          h3
+            margin-left: 15px
+
 
   // ≤1200px
-  +media-breakpoint-up(xl)
++media-breakpoint-up(xl)
+  @media screen and (max-width: 1560px)
+    .hero__bird
+      display: none
+    .income__container
+      margin-right: 0
+
+    .tariffs__wrapper
+      width: 100%
+
+
+    .our-team__container
+      width: 100%
+
+    .hero
+
+      nav
+        width: 90%
+
+      &__wrapper
+        width: 100%
+        text-align: center
+        padding-right: 150px
+      &__sale
+        padding: 0
+
+    .footer
+      &__container
+        &__telegram
+          img
+            padding-right: 0
+
+          h3
+            margin-left: 15px
+
+    .about-us__left-side
+      padding-left: 70px
+
+    .about-us__right-side
+      ul
+        li
+          font-size: 22px
+
+
+    .tariffs__wrapper, .our-farm, .directions,
+      h2
+        padding-left: 70px
+
+
+    .our-team
+      &__container
+        padding-left: 0
+
+        h2
+          padding-left: 70px
+
+
+    .footer__container
+      padding-top: 0
+
+
++media-breakpoint-up(md)
+  +media-breakpoint-down(lg)
+    .hero__sale
+      padding: 0
+
+
++media-breakpoint-up(sm)
+  +media-breakpoint-down(md)
+    .income__container__wrapper__right-side
+      margin-left: 0
+
+    @media screen and (min-width: 768px)
+      .income__container
+        button
+          &:not(.light-btn)
+            &:not(.premium-btn)
+              margin-left: 160px
+
++media-breakpoint-up(xs)
+  +media-breakpoint-down(sm)
+    .about-us__left-side
+      height: 600px
+
+    .directions
+      margin-top: 20px
+
+
+@media screen and (min-width: 576px)
+  @media screen and (max-width: 650px)
+    .directions__container__advantages__wrapper
+      width: 210px
+      text-align: center
+      p
+        text-align: left
+        padding-left: 25px
