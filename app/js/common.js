@@ -112,4 +112,4 @@ $(document).on({
     }
 }, '.premium-btn');
 
-// AOS.init( {disable: 'mobile'} );
+AOS.init( {disable: 'mobile'} );
