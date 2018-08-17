@@ -148,6 +148,8 @@
 +media-breakpoint-down(sm)
 
 
+
+
  //≥576px
 +media-breakpoint-down(xs)
   section
@@ -163,12 +165,12 @@
 
     nav
       width: 90%
-      height: 60px
+      height: 90px
 
       img
         margin: 0
         height: 60px
-        display: none
+        display: block
 
     &__wrapper
       max-width: 90%
@@ -396,7 +398,7 @@
       padding-left: 10px
 
       &__center
-        margin-top: 300px
+        margin-top: 200px
 
 
       p
@@ -531,7 +533,7 @@
           font-size: 24px
       nav
         img
-          display: none
+
 
       &__sale
         font-size: 200px
@@ -885,3 +887,9 @@
       p
         text-align: left
         padding-left: 25px
+
+
+@media screen and (max-width: 768px)
+  //.hero
+  //  nav
+  //    justify-content: flex-end
